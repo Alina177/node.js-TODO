@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en" ng-app>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="shortcut icon" href="#" />
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"><!-- load bootstrap -->
+    <style>
+        html                    { overflow-y:scroll; }
+        body                    { padding:0 0 50px 0; }
+        #todo-list              { margin-bottom:30px; }
+        .navbar-inverse         { margin-top: 0;}
+    </style>
+
+</head>
+<body ng-controller="mainController" data-ng-init="init()">
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <div class="navbar-brand" >ToDoSomething</div>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#" ng-click="deleteTokenR()"><span class="glyphicon glyphicon-user"  ng-model="mainController.text" ></span> {{mainController.text}}Registration</a></li>
+                <li><a href="#" ng-click="deleteTokenA()"><span class="glyphicon glyphicon-log-in"></span> Authorization</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="jumbotron text-center">
+            <h1>App MEAN<span class="label label-info">{{todos.length}}</span> </h1>
+        </div>
+
+        <div id="todo-list" class="row">
+            <div class="col-sm-4 col-sm-offset-4">
+                <div class="checkbox" ng-repeat="todo in todos" >
+                        <div><input type="checkbox" ng-click="deleteTodo(todo._id)"></div>
+                    <label >
+                        <div ng-click="updateTodo(todo._id)">{{todo.text}}</div>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div id="todo-form" class="row">
+            <div class="col-sm-8 col-sm-offset-2 text-center">
+                <form>
+                    <div class="form-group">
+                        <input type="text" id = "input-for-todos" class="form-control input-lg text-center" placeholder="I want to buy a puppy that will love me forever" ng-model="formData.text">
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-lg" ng-click="createTodo()">Add</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script><!-- load jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.28/angular.min.js"></script><!-- load angular -->
+    <script src="core.js"></script>
+</body>
+</html>

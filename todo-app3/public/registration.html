@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en" ng-app>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"><!-- load bootstrap -->
+    <style>
+        html                    { overflow-y:scroll; }
+        body                    { padding-top:50px; width: 30vw; margin: 0 auto; }
+        #todo-list              { margin-bottom:30px; }
+        .info                   { color: #ff6347; font-size: 18px; margin: 10px;}
+        .input-lg                   { margin: 10px; background: #e9e9e9; box-shadow: inset 0px 0px 2px rgba(50,50,50,0.3);}
+        .btn-lg                  { margin-left: 10px;}
+        .route                  {width:100%; text-align: right; font-size: 20px;}
+    </style>
+
+</head>
+<body ng-controller="mainController as main">
+    <h1> REGISTRATION</h1>
+    <input type="text" class="form-control input-lg text-center" placeholder="user" ng-model="main.name">
+    <input type="password" class="form-control input-lg text-center" placeholder="password" ng-model="main.password">
+    <!--name : {{main.name}} password: {{main.password}}-->
+    <button type="submit" class="btn btn-primary btn-lg" ng-click="createUser()">Signup</button>
+    <br>
+    <div class="info">{{main.message}}</div>
+    <div class="route">
+        <a href="login">Log in</a>
+    </div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script><!-- load jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.28/angular.min.js"></script><!-- load angular -->
+    <script src="registr_contr.js"></script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'jsdoc-to-',
+1 verbose cli   'markdown' ]
+2 info using npm@3.5.2
+3 info using node@v4.2.6
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readGlobalPackageData
+7 silly fetchPackageMetaData jsdoc-to-
+8 silly fetchPackageMetaData markdown
+9 silly fetchNamedPackageData jsdoc-to-
+10 silly mapToRegistry name jsdoc-to-
+11 silly mapToRegistry using default registry
+12 silly mapToRegistry registry https://registry.npmjs.org/
+13 silly mapToRegistry uri https://registry.npmjs.org/jsdoc-to-
+14 silly fetchNamedPackageData markdown
+15 silly mapToRegistry name markdown
+16 silly mapToRegistry using default registry
+17 silly mapToRegistry registry https://registry.npmjs.org/
+18 silly mapToRegistry uri https://registry.npmjs.org/markdown
+19 verbose request uri https://registry.npmjs.org/jsdoc-to-
+20 verbose request no auth needed
+21 info attempt registry request try #1 at 2:45:08
+22 verbose request id a7bb8c60d5d838c1
+23 http request GET https://registry.npmjs.org/jsdoc-to-
+24 verbose request uri https://registry.npmjs.org/markdown
+25 verbose request no auth needed
+26 info attempt registry request try #1 at 2:45:08
+27 http request GET https://registry.npmjs.org/markdown
+28 http 200 https://registry.npmjs.org/markdown
+29 verbose headers { 'content-type': 'application/json; charset=UTF-8',
+29 verbose headers   server: 'UploadServer',
+29 verbose headers   'cache-control': 'max-age=300',
+29 verbose headers   'last-modified': 'Thu, 23 Nov 2017 1:09:40 GMT',
+29 verbose headers   etag: '"5a161fd4-26d6"',
+29 verbose headers   'content-length': '9942',
+29 verbose headers   'accept-ranges': 'bytes',
+29 verbose headers   date: 'Tue, 05 Dec 2017 22:46:06 GMT',
+29 verbose headers   via: '1.1 varnish',
+29 verbose headers   age: '680',
+29 verbose headers   connection: 'keep-alive',
+29 verbose headers   'x-served-by': 'cache-hhn1528-HHN',
+29 verbose headers   'x-cache': 'HIT',
+29 verbose headers   'x-cache-hits': '1',
+29 verbose headers   'x-timer': 'S1512513967.536944,VS0,VE0',
+29 verbose headers   vary: 'Accept-Encoding, Accept' }
+30 silly get cb [ 200,
+30 silly get   { 'content-type': 'application/json; charset=UTF-8',
+30 silly get     server: 'UploadServer',
+30 silly get     'cache-control': 'max-age=300',
+30 silly get     'last-modified': 'Thu, 23 Nov 2017 1:09:40 GMT',
+30 silly get     etag: '"5a161fd4-26d6"',
+30 silly get     'content-length': '9942',
+30 silly get     'accept-ranges': 'bytes',
+30 silly get     date: 'Tue, 05 Dec 2017 22:46:06 GMT',
+30 silly get     via: '1.1 varnish',
+30 silly get     age: '680',
+30 silly get     connection: 'keep-alive',
+30 silly get     'x-served-by': 'cache-hhn1528-HHN',
+30 silly get     'x-cache': 'HIT',
+30 silly get     'x-cache-hits': '1',
+30 silly get     'x-timer': 'S1512513967.536944,VS0,VE0',
+30 silly get     vary: 'Accept-Encoding, Accept' } ]
+31 verbose get saving markdown to /home/alina/.npm/registry.npmjs.org/markdown/.cache.json
+32 http 404 https://registry.npmjs.org/jsdoc-to-
+33 verbose headers { 'content-type': 'application/json',
+33 verbose headers   'cache-control': 'max-age=0',
+33 verbose headers   'content-length': '2',
+33 verbose headers   'accept-ranges': 'bytes',
+33 verbose headers   date: 'Tue, 05 Dec 2017 22:46:07 GMT',
+33 verbose headers   via: '1.1 varnish',
+33 verbose headers   connection: 'keep-alive',
+33 verbose headers   'x-served-by': 'cache-hhn1542-HHN',
+33 verbose headers   'x-cache': 'MISS',
+33 verbose headers   'x-cache-hits': '0',
+33 verbose headers   'x-timer': 'S1512513967.536763,VS0,VE1338',
+33 verbose headers   vary: 'Accept-Encoding' }
+34 silly get cb [ 404,
+34 silly get   { 'content-type': 'application/json',
+34 silly get     'cache-control': 'max-age=0',
+34 silly get     'content-length': '2',
+34 silly get     'accept-ranges': 'bytes',
+34 silly get     date: 'Tue, 05 Dec 2017 22:46:07 GMT',
+34 silly get     via: '1.1 varnish',
+34 silly get     connection: 'keep-alive',
+34 silly get     'x-served-by': 'cache-hhn1542-HHN',
+34 silly get     'x-cache': 'MISS',
+34 silly get     'x-cache-hits': '0',
+34 silly get     'x-timer': 'S1512513967.536763,VS0,VE1338',
+34 silly get     vary: 'Accept-Encoding' } ]
+35 silly fetchPackageMetaData Error: Registry returned 404 for GET on https://registry.npmjs.org/jsdoc-to-
+35 silly fetchPackageMetaData     at makeError (/usr/share/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+35 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (/usr/share/npm/node_modules/npm-registry-client/lib/request.js:242:14)
+35 silly fetchPackageMetaData     at Request._callback (/usr/share/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+35 silly fetchPackageMetaData     at Request.self.callback (/usr/share/npm/node_modules/request/request.js:198:22)
+35 silly fetchPackageMetaData     at emitTwo (events.js:87:13)
+35 silly fetchPackageMetaData     at Request.emit (events.js:172:7)
+35 silly fetchPackageMetaData     at Request.<anonymous> (/usr/share/npm/node_modules/request/request.js:1082:10)
+35 silly fetchPackageMetaData     at emitOne (events.js:82:20)
+35 silly fetchPackageMetaData     at Request.emit (events.js:169:7)
+35 silly fetchPackageMetaData     at IncomingMessage.<anonymous> (/usr/share/npm/node_modules/request/request.js:1009:12)
+35 silly fetchPackageMetaData  error for jsdoc-to- { [Error: Registry returned 404 for GET on https://registry.npmjs.org/jsdoc-to-] pkgid: 'jsdoc-to-', statusCode: 404, code: 'E404' }
+36 silly rollbackFailedOptional Starting
+37 silly rollbackFailedOptional Finishing
+38 silly runTopLevelLifecycles Starting
+39 silly runTopLevelLifecycles Finishing
+40 silly install printInstalled
+41 verbose stack Error: Registry returned 404 for GET on https://registry.npmjs.org/jsdoc-to-
+41 verbose stack     at makeError (/usr/share/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+41 verbose stack     at CachingRegistryClient.<anonymous> (/usr/share/npm/node_modules/npm-registry-client/lib/request.js:242:14)
+41 verbose stack     at Request._callback (/usr/share/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+41 verbose stack     at Request.self.callback (/usr/share/npm/node_modules/request/request.js:198:22)
+41 verbose stack     at emitTwo (events.js:87:13)
+41 verbose stack     at Request.emit (events.js:172:7)
+41 verbose stack     at Request.<anonymous> (/usr/share/npm/node_modules/request/request.js:1082:10)
+41 verbose stack     at emitOne (events.js:82:20)
+41 verbose stack     at Request.emit (events.js:169:7)
+41 verbose stack     at IncomingMessage.<anonymous> (/usr/share/npm/node_modules/request/request.js:1009:12)
+42 verbose statusCode 404
+43 verbose pkgid jsdoc-to-
+44 verbose cwd /home/alina/WebstormProjects/todo-app3
+45 error Linux 4.4.0-53-generic
+46 error argv "/usr/bin/nodejs" "/usr/bin/npm" "install" "-g" "jsdoc-to-" "markdown"
+47 error node v4.2.6
+48 error npm  v3.5.2
+49 error code E404
+50 error 404 Registry returned 404 for GET on https://registry.npmjs.org/jsdoc-to-
+51 error 404
+52 error 404 'jsdoc-to-' is not in the npm registry.
+53 error 404 You should bug the author to publish it (or use the name yourself!)
+54 error 404 Note that you can also install from a
+55 error 404 tarball, folder, http url, or git url.
+56 verbose exit [ 1, true ]
